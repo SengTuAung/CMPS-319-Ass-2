@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<!-- Saung 3/17/22 New 1L: Implemented meta keywords for better search result -->
+<meta name="keywords" content="HTML,CSS,JavaScript">
+<meta name="description" content="About Me">
+<meta name="author" content="Seng Tu Aung">
+<meta http-equiv="refresh" content="30">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>About Me</title>
+<!-- Saung 3/17/22 New 1L: Link the html to css file -->
+<link rel="stylesheet" href="style.css">
+</head>
+<!-- Saung 3/21/22 New 1L: Added Style tag -->
+<style>
+
+.myOvw {
+
+ display:flex
+ flex-wrap:wrap;
+ background: yellow;
+ 
+ }
+
+ .myGoal {
+
+ display:flex
+ flex-wrap:wrap;
+ background: orange;
+ 
+ }
+ 
+ .myFav {
+ 
+  display:flex
+ flex-wrap:wrap;
+background: yellowgreen;
+
+ }
+
+ .myCourse {
+
+  display:flex
+ flex-wrap:wrap;
+ background: steelblue;
+ 
+ }
+
+ .myContact {
+  display:flex
+ flex-wrap:wrap;
+ background:blue
+ }
+ 
+
+ th { background-color: lightblue;
+                text-align: center;
+				padding: 20px;		
+				}
+
+ td { background-color: yellow;
+                padding-left: 10px;
+				opacity: 0.8;
+				}
+	
+ 
+</style>
+<body>
+<h1> About me </h1>
+<a href="https://www.yismyanmar.com/"><img src="myschool.jpg" alt="my school" width="800" height="600"/></a>
+<hr>
+
+<div class="myOvw">
+<h2> Overview </h2>
+<!-- Saung 3/17/22 New 1L: Implement paragraph tags -->
+<p> My name is Seng Tu Aung. I am a junior student here in ULV. 
+I am currently majoring in E-commerce and my concentration
+is Internet programming and I play professionally in a game
+ called Counter Strike Global Offensive.</p>
+<br>
+</div>
+<div class="myGoal">
+<!-- Saung 3/17/22 New 1L: Implement h2 title -->
+<h2> Goals </h2>
+<!-- Saung 3/17/22 New 1L: implement ordered list tags  -->
+<ol>
+	<li> Learn Java script and implement it on html</li>
+	<li>Learn Guitar </li>
+	<li> Learn how to sing</li>
+	<li> Try to acieve 4 gpa </li>
+	<li> Learn the materials taught to me </li>
+</div>	
+	
+<div class="myGoal">
+<!-- Saung 3/17/22 New 1L: Implement h2 title -->
+<h2> My Favorite Video </h2>
+<!-- Saung 3/17/22 New 1L: implemented iframe to show youtube video result in the page -->
+<iframe width="894" height="503" src="https://www.youtube.com/embed/EPhtkG9n3mE?list=RDEPhtkG9n3mE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p> This video is my current
+favorite because I love this 
+song so much it connects me back to 
+my deceased grandparents. I miss them
+so much. This video helps me cope with it.
+I am also currently trying to learn how to play 
+this song with my guitar and trying to duet with a 
+friend of mine as well.
+</p>
+</div>
+<div class="myCourse">
+<!-- Saung 3/17/22 New 1L: Implement h2 title -->
+<h2> Course Schedule </h2>
+<!-- Saung 3/17/22 New 1L: Created table -->
+<table>
+ <tr>
+    <th>Course Number</th>
+    <th>Course Name</th>
+    <th>Time</th>
+	  <th>Place</th>
+  </tr>
+<tr>
+	<td>CMPS 490</td>
+	<td>Project Management</td>
+	<td>Monday 6:00pm to 9:20 pm</td>
+	<td>Online Class</td>
+</tr>
+<tr>
+	<td>CMPS 392</td>
+	<td>Database Management System</td>
+	<td>Friday 6:00 to 9:20 pm</td>
+	<td>Founder Hall</td>
+</tr>
+<tr>
+	<td>CMPS 319</td>
+	<td>Publshing on the Web II</td>
+	<td> Tuesday and Thursday 12:05 pm to 1:40 pm</td>
+	<td>Founder Hall</td>
+</tr>
+<tr>
+	<td>CMPS 320</td>
+	<td>Internet Apps Development</td>
+	<td>Thursday 6:50 pm to 10:00 pm</td>
+	<td>Online Class</td>
+</tr>
+</table>
+
+
+<div class="myContact">
+<h2> Contact </h2>
+
+  <!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xgedzlpw"
+  method="POST"
+>
+<!-- Saung 3/17/22 New 10L: created form -->
+<label>
+    Name:
+    <input type="text" name="name">
+  </label>
+   <br>
+  <label>
+    Phone:
+    <input type="tel" name="phone"
+	pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required>
+	   <small>Format: 123-456-7890</small>
+  </label>
+  <br>
+  <label>
+    E-Mail:
+    <input type="email" name="email">
+  </label>
+   <br>
+  <label>
+    Subject:
+    <input type="text" name="subject">
+  </label>
+  <br>
+   <br>
+  <label>
+    Message:
+    <textarea name="message"></textarea>
+  </label>
+   <br>
+   <label for="severity">Severity:</label>
+
+<select name="severity" id="severity">
+  <option value="normal">Normal</option>
+  <option value="serious">Serious</option>
+  <option value="harsh">Harsh</option>
+  <option value="danger">Danger</option>
+</select>
+<br>
+  <div>
+  <input type="range" id="rating" name="rating"
+         min="0" max="10">
+  <label for="rating">Rating</label>
+</div>
+   <br>
+    <!-- Saung 3/21/22 New 1L: new img refrences to button  -->
+  <!-- your other form fields go here -->
+  <button type="submit"><img src="smile.png" height ="80" width="100" /></button>
+  
+
+</form>
+
+
+</body>
+
+
+</html>
